@@ -1,0 +1,298 @@
+* {
+   font-family: Markazi Text, Karla, serif;
+}
+
+ul {
+   padding-inline-start: 0px;
+}
+
+.laptop-navbar {
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+}
+
+.mobile-navbar {
+   display: grid;
+   padding-inline-start: 0px;
+   margin-left: 0px;
+}
+
+.navbar-button {
+   padding: 8px;
+   text-align: center;
+   text-decoration: none;
+   color: black;
+}
+
+.navbar-button:hover {
+   background-color: #f4ce14;
+   color: black;
+}
+
+.logoImage {
+   margin-left: -1.25rem;
+   margin-top: 0.7rem;
+   max-height: 4rem;
+   padding-right: 10px;
+}
+
+.hamburger-nav {
+   display: grid;
+   grid-template-columns: 1fr 6fr;
+   padding: 2.5rem;
+}
+
+.hamburger-button {
+   float: right;
+   grid-column: 7;
+   background-color: #fff;
+   border: none;
+}
+
+@media (min-width: 800px) {
+   .laptop-navbar {
+      display: grid;
+   }
+
+   .mobile-navbar {
+      display: none
+   }
+
+   .hamburger-nav {
+      display: none;
+   }
+
+   .specialCards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   .testinomialCards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+   }
+
+   .specialCard,
+   .testinomialCard {
+      margin-right: 2rem;
+   }
+}
+
+@media (max-width: 799px) {
+   .laptop-navbar {
+      display: none;
+   }
+
+   .mobile-navbar {
+      display: grid
+   }
+
+   .hamburger-nav {
+      display: grid;
+   }
+
+   .specialCards {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+   }
+
+   .testinomialCards {
+      display: grid;
+      grid-template-rows: repeat(7, 1fr);
+   }
+
+   .specialCard,
+   .testinomialCard {
+      margin-bottom: 2rem;
+   }
+}
+
+a:visited,
+Link:visited,
+a:link,
+Link:link {
+   text-decoration: none;
+   color: black;
+   text-align: center;
+}
+
+.jumbotron {
+   background-color: #495e57;
+   color: #fff;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding: 2rem 6rem;
+}
+
+.imgSection-header>img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.imgSection-header {
+   max-height: 20rem;
+}
+
+.textSection-header>h1 {
+   font-size: 3rem;
+   margin-bottom: -2rem;
+   margin-top: 0;
+}
+
+.textSection-header>h3 {
+   font-size: 2.5rem;
+}
+
+.textSection-header>p {
+   margin-top: -2rem;
+}
+
+.yellowButton {
+   background-color: #f4ce14;
+   font-size: 1.5rem;
+   padding: 0.5rem 1rem;
+   border-radius: 16px;
+}
+
+.yellowButton:hover {
+   background-color: #495e57;
+   font-size: 1.5rem;
+   padding: 0.5rem 1rem;
+   border-radius: 16px;
+   color: white;
+}
+
+.header-text-center {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 50px;
+   background-color: #495e57;
+   color: white;
+   border-radius: 16px;
+}
+
+.commonHeader {
+   position: relative;
+}
+
+.commonHeader>img {
+   height: 20rem;
+   object-fit: cover;
+   width: 100vw;
+}
+
+footer {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   background-color: #495e57;
+}
+
+.footerLogo {
+   max-height: 10rem;
+   margin: 2rem;
+   padding: 5px;
+   background: white;
+}
+
+.footerTitle,
+.footerContent {
+   color: white;
+   text-align: start;
+}
+
+.address1 {
+   margin-bottom: -1.25rem;
+}
+
+.specials,
+.testinomials {
+   padding: 2rem 6rem;
+}
+
+.specialCard>img {
+   height: 10rem;
+   object-fit: cover;
+   width: 100%;
+}
+
+.specialCard {
+   background-color: #edefee;
+}
+
+.specialCardLower {
+   background-color: #edefee;
+   padding: 0rem 2rem 2rem 2rem;
+}
+
+.specialCardLower>h1 {
+   font-size: 1.5rem;
+}
+
+.testinomialCard {
+   border-radius: 8px;
+   background-color: #edefee;
+   margin: 1rem;
+   padding: 0rem 1rem 1rem 1rem;
+}
+
+.testinomials>h1 {
+   text-align: center;
+   font-size: 2rem;
+}
+
+.restaurantArticle {
+   background-color: #f4ce14;
+   padding-left: 6rem;
+   padding-right: 6rem;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   height: 20vw;
+}
+
+.restaurantArticle-text {
+   padding: 2rem;
+}
+
+.restaurantArticle-imgs {
+   position: relative;
+}
+
+.restaurantImg {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 50px;
+   height: 15rem;
+}
+
+.articleImg1 {
+   top: 60%;
+   left: 60%;
+   transform: translate(-50%, -50%);
+}
+
+.articleImg2 {
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+input,
+select,
+textarea {
+   width: 10rem;
+}
+
+.inputLabel,
+termsAndCondition {
+   margin-bottom: 1rem;
+}
+
+.bookingForm {
+   text-align: center;
+   margin: 2rem;
+}
