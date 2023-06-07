@@ -1,11 +1,13 @@
 import CommonHeader from "./CommonHeader";
+import CenteredImage from "./Construction";
 
 function OrderOnline(){
     return (
         <>
             <CommonHeader
                 title={"Order Online"}/>
-            <p>Order Online</p>
+            <CenteredImage altText={"Under COnstruction"}/>
+
         </>
     );
 }
